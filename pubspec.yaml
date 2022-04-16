@@ -1,7 +1,8 @@
 name: key_simulator
-description: A new flutter plugin project.
+description: Desktop Key Simulator
 version: 0.0.1
-homepage:
+homepage: https://github.com/boparaiamrit/key_simulator
+repository: https://github.com/boparaiamrit/key_simulator
 
 environment:
   sdk: ">=2.16.2 <3.0.0"
