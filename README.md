@@ -16,7 +16,7 @@ KeySimulator.simulateCopy
 ### Simulate Tab Shifter
 
 ```dart
- // It will simulate CTRL+TAB,CMD+TAB
+// It will simulate CTRL+TAB,CMD+TAB
 KeySimulator.simulateTabShifter
 ```
 
