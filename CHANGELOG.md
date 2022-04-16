@@ -5,3 +5,7 @@
 ## 0.0.2
 
 * README.md updated
+
+## 0.0.3
+
+* Switch Case Fixed in MacOS
