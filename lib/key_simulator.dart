@@ -27,4 +27,8 @@ class KeySimulator {
   static Future<bool> get simulateTabShifter async {
     return await _channel.invokeMethod('simulateTabShifter');
   }
+
+  static Future<bool> get simulateShiftTabShifter async {
+    return await _channel.invokeMethod('simulateShiftTabShifter');
+  }
 }

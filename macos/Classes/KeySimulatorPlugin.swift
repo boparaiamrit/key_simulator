@@ -30,6 +30,15 @@ public class KeySimulatorPlugin: NSObject, FlutterPlugin {
       event2?.flags = CGEventFlags.maskCommand;
       event2?.post(tap: CGEventTapLocation.cghidEventTap);
       result(true)
+    case "simulateShiftTabShifter":
+      let event1 = CGEvent(keyboardEventSource: nil, virtualKey: 0x30, keyDown: true);
+      event1?.flags = CGEventFlags(rawValue: CGEventFlags.maskCommand.rawValue | CGEventFlags.maskShift.rawValue)
+      event1?.post(tap: CGEventTapLocation.cghidEventTap);
+
+      let event2 = CGEvent(keyboardEventSource: nil, virtualKey: 0x30, keyDown: false);
+        event2?.flags = CGEventFlags(rawValue: CGEventFlags.maskCommand.rawValue | CGEventFlags.maskShift.rawValue)
+      event2?.post(tap: CGEventTapLocation.cghidEventTap);
+      result(true)
     default:
       result(FlutterMethodNotImplemented)
     }

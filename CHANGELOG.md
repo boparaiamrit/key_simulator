@@ -9,3 +9,7 @@
 ## 0.0.3
 
 * Switch Case Fixed in MacOS
+
+## 0.0.4
+
+* Shift Commannd Tab Added
